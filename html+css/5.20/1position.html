@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1200743_a55dfzuv0lw.css">
+    <title>Document</title>
+    <style>
+    /* 样式重置 */
+    body,ul,li,dl,dt,dd,a,p,h1,h6,dl,dt,dd,ol{
+        padding: 0;
+        margin: 0;
+    }
+    a{ text-decoration: none;}
+    li{list-style: 0;}
+    body{
+        width: 100%;
+        height: 2000px;
+        background: #F00;
+        padding: 0;
+        margin: 0;
+    }
+    .test{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        background: #fff;
+        position: fixed;
+        right: 0;
+        top:50%;
+        margin-top: -100px;
+    }
+    .one,.two,.thr{
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+        background: #00f;
+        color: #fff;
+    }
+    .two{
+        background: #ccc;
+        /* position: relative; 相对于原位置的左上角 */
+        /* top: 100px;
+        left: 100px; */
+        position: absolute; /*整个网页的左上角；相对于脱离了标准流的 父元素*/
+        top: 100px; 
+
+    }
+    .thr{
+        background: #0f0;
+    }
+    .for{
+        position: relative;
+    }
+    .bg1{
+        background: #0f0;
+    }
+    .icon-shouhou{
+        font-size: 32px;
+    }
+    .icon-shouji{
+        font-size: 32px;
+        color: #0f0;
+    }
+    </style>
+</head>
+<body>
+<!-- 
+position
+    absolute 绝对定位 【页面的左上角定位，脱离流标准流父级（position）】
+    开始设置完absolute不会动的，添加top，left之后，会相对于页面的左上角定位
+    会让出原来的空间，下面的元素会自动网上移动
+
+    relative 相对于原位置的左上角
+    不会让出原来的空间
+    一般情况下会作为，脱离流标准流父级来使用
+
+    fixed 固定之后不会动
+    调整位置的时候：left，right，top，bottom；margin辅助；用在页面的广告位；
+
+css 样式 -->
+<div class="one">
+    one<i class="icon iconfont icon-shouji"></i>  
+</div>
+<div class="for">
+    <div class="two">
+        two
+    </div>
+</div>
+
+<div class="thr">
+    thr
+</div>
+
+<div class="test">
+    这是一个广告
+</div>
+
+<div class="sp1 bg1"></div>
+
+</body>
+</html>

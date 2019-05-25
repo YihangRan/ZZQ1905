@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    input:focus{
+        border: 3px solid #f00;
+        outline: 0; /* 默认情况下是蓝色的 */
+
+    }
+    /* li:nth-child(2n) */
+    </style>
+</head>
+<body>
+    <!-- 
+        js  数组
+            name zhangsan
+            age  18
+            sex  nan
+        [{'name':'zhangsan','age','18'},{}]
+
+        form 表单，用来做数据的提交，跟后台交互
+            action 属性，定义连接的路径；如果不写，跳转到当前路径
+        input 输入元素
+            type类型区分
+            text  单行文本，
+                placeholder 提示文本，输入文本之后会自动消失
+                maxlength 最大长度
+                name 传输数据的健【重要的，必须添加】
+            password  密码框
+            submit  提交按钮
+                value 提示文本
+        
+        file:///Users/ranyihang/Documents/work/zzq1904/html+css/5.21/index.php  路径
+        
+        ?username=123&pwd=123  参数 健=值 & 健=值
+
+        路径|url定位符
+        http或者https【加密】//二级域名/文件夹|文件/? 
+        https://s.taobao.com/list?spm=a217f.8051907.312344.10.27983308Q9kD1T&q=%E9%95%BF%E8%A2%96%E8%BF%9E%E8%A1%A3%E8%A3%99&cat=16&style=grid&seller_type=taobao
+
+        http://www.baidu.com
+
+        c://d/a/345/7.txt
+
+        .././../
+
+        get：地址栏；不安全；文件的大小是有限的；
+        post：隐藏的方式；相对安全；文件的大小没有限制；--- file
+     -->
+    <form action="index.php" method="post" enctype="multipart/form-data" class="one two">
+        姓名：<input type="text" placeholder="请输入用户名长度不超过5位" maxlength="5" name='username'/><br/>
+        密码：<input type="password" name='pwd'/><br/>
+        性别：<input type="radio" name='sex' value="男" checked/>男
+        <input type="radio" name='sex' value="女"/>女<br/>
+        爱好：<input type="checkbox" name='love' value="篮球" id="lan"/>
+        <label for="lan">篮球</label>
+        <input type="checkbox" name='love' value="足球" id="zu"/>
+        <label for="zu">足球</label>
+        <input type="checkbox" name='love' value="羽毛球"/>羽毛球
+        <input type="checkbox" name='love' value="乒乓球"/>乒乓球<br/>
+        城市：
+        <select name='city' multiple>
+            <option>--请选择--</option>
+            <optgroup label="北方">
+                <option value="青岛">青岛</option>
+                <option value="济南">济南</option>
+                <option value="郑州">郑州</option>
+            </optgroup>
+            <optgroup label="西北地区">
+                <option value="色达">色达</option>
+            </optgroup>
+            <optgroup label="南方">
+                <option value="大理">大理</option>
+                <option value="九寨沟">九寨沟</option>
+            </optgroup>
+        </select><br/>
+        上传头像：<input type="file" name='actore'/>
+        个人简介：
+        <textarea cols="30" rows="10"></textarea><br/>
+        <input type="submit" value="确定"/> 提交对应的url
+        <input type="reset" value="重置所有信息"/>  清空表单中所有的内容
+        <input type="button" value="普通按钮" />  在js中用来做数据验证
+        <input type="image" src="images/img2.jpeg" width="50"/>  提交的功能
+        <button>普通按钮</button>  在js中用来做数据验证
+    </form>  
+</body>
+</html>

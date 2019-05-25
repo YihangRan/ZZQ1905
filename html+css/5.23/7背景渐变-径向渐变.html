@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .div1{
+        /* 默认情况下，平分占的位置 */
+        width: 300px;
+        height: 300px;
+        background: -webkit-radial-gradient(red,green,blue);
+    }
+    .div2{
+        /* 不均匀分布，按照给定比例分布 */
+        width: 300px;
+        height: 300px;
+        background: -webkit-radial-gradient(red 5%,green 15%,blue 80%);
+    }
+    .div3{
+        /* 不均匀分布，按照给定比例分布 */
+        width: 500px;
+        height: 300px;
+        background: -webkit-radial-gradient(red,green,blue);
+    }
+    .div4{
+        /* 不均匀分布，按照给定比例分布 */
+        width: 300px;
+        height: 300px;
+        background:-webkit-repeating-radial-gradient(red 2%,green 20%,blue 30%)
+    }
+    </style>
+</head>
+<body>
+    <!-- 
+        径向渐变：radial-gradients
+        语法：
+        background：radial-gradients(center,shape【circle|ellipse】,size,color1,color2)
+        shape表示径向渐变的形状：默认情况下是ellipse椭圆，可以使用circle设置为圆形
+    -->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <canvas></canvas> html5 js
+    svg
+</body>
+</html>

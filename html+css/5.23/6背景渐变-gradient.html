@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .div1{
+        width: 500px;
+        height: 100px;
+        /* background: linear-gradient(red,blue,green); */
+        background: linear-gradient(#000,#fff);
+    }
+    .div2{
+        width: 500px;
+        height: 100px;
+        border: 1px solid #f00;
+        /* background: linear-gradient(red,blue,green); */
+        background: -webkit-linear-gradient(left,#f00,#0f0);
+        background: -o-linear-gradient(left,#f00,#0f0);
+        background: -ms-linear-gradient(left,#f00,#0f0);
+        background: -moz-linear-gradient(left,#f00,#0f0);
+        background: linear-gradient(left,#f00,#0f0);
+    }
+    .div3{
+        width: 500px;
+        height: 100px;
+        /* background: -webkit-linear-gradient(left top,#f00,#0f0); 
+        */
+        background: -webkit-linear-gradient(left top, red , #0f0,#00f,#000); /* Safari 5.1 - 6.0 */
+    }
+    .div4{
+        width: 500px;
+        height: 100px;
+        background: -webkit-linear-gradient(90deg, red , #0f0);
+        /* 
+        0deg 从左往右
+        180deg 从右向左
+        90 从下往上
+        -90 从上往下*/
+    }
+    .div5{
+        width: 500px;
+        height: 100px;
+        background: -webkit-linear-gradient(left,red,orange,yellow ,green,blue,indigo,purple);
+    }
+    .div6{
+        width: 500px;
+        height: 100px;
+        background: -webkit-linear-gradient(left,rgba(255,0,0,0.5),rgba(0,0,255,0.5));
+        /* rgba 颜色最大为255，最小为0；透明度最大为1，最小为0 */
+    }
+    .div7{
+        width: 500px;
+        height: 500px;
+        background:-webkit-repeating-linear-gradient(red,yellow,#000 30%)
+    }
+    </style>
+</head>
+<body>
+    <!-- 背景渐变
+        可以指定2个以上的颜色进行过渡
+    分类：
+        线性渐变：linear-gradients
+        径向渐变：radial-gradients
+    linear-gradient 线性渐变
+    radial-gradient 径向渐变
+    repeating-linear-gradient 重复渐变
+    repeating-radial-gradient 重复径向渐变
+
+    语法：
+    background:linear-gradient(方向，color1，color2)
+    默认情况下：方向为从上往下
+    background-image: 
+    如果想要设置多个颜色的过渡，可以直接写多个颜色值
+
+
+
+
+    浏览器兼容：【内核】
+    ie ：-ms-
+    谷歌|Safari ： -webkit-
+    火狐： -moz-
+    open ： -o-
+    html5，css3
+
+
+-->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+    <div class="div6"></div>
+    <div class="div7"></div>
+</body>
+</html>

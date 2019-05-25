@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .one,.two,.thr{
+            width: 200px;
+            height: 200px;
+        }
+        .one{
+            background-color: #f00;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .one:hover{
+            z-index: 5;
+        }
+        .two{
+            background-color: #0f0;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+        .thr{
+            background-color: #00f;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 7;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- 
+        z-index 只能用在脱离了标准流的元素中【position】
+
+        float：文字围绕图片
+    -->
+    <div class="one">红色</div>
+    <div class="two">绿色</div>
+    <div class="thr">蓝色</div>
+</body>
+</html>

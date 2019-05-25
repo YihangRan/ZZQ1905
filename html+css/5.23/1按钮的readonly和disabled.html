@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    readonly 只读 可以提交数据
+    disabled 不允许，禁止 不可以提交数据
+    用在表单元素的控制 
+    -->
+    <form>
+    姓名：<input type="text" name='uname' value="请输入用户名" readonly='readonly'/>
+    姓名：<input type="text" name='uname' value="请输入用户名" disabled/><br/>
+    选修课：
+    <input type="checkbox" name='hobby' value="舞蹈"/> 舞蹈
+    <input type="checkbox" name='hobby' value="唱歌"/> 唱歌
+    <input type="checkbox" name='hobby' value="演讲"/> 演讲
+    <input type="checkbox" name='hobby' value="跆拳道" disabled/> 跆拳道
+    <input type="submit"/>
+    </form>
+
+</body>
+</html>

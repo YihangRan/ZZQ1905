@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    table{
+        width: 500px;
+    }
+    table,thead,tr,td,th{
+        border: 1px solid #000;
+        border-collapse:collapse; /* 边框和边框之间的举例 */
+    }
+    tr:nth-child(2n-1){
+        background: #f00;
+    }
+    /* 
+    :first-child 第一个子元素
+    :last-child  最后一个子元素
+    :nth-child(n) 第几个子元素
+    :nth-child(2n) 偶数元素
+    :nth-child(2n-1)  奇数元素
+    */
+    </style>
+</head>
+<body>
+    <!-- 
+        table  外部表格结构
+            thead 表格头部
+                tr 行
+                th 头部单元格【默认情况下，文本水平、垂直对齐，文本加粗】
+                tr 
+                td 内容单元格
+            tbody
+            tfoot
+
+        rowspan 行合并
+        colspan 列合并
+        border-collapse  边框和边框之间的缝隙
+        cellspacing='0'  table属性中去除单元格和单元格之间的缝隙
+
+
+    [{'姓名'：‘张三’，‘年龄’：‘18’，‘性别’，‘男’}。。。]
+     -->
+     <table border="1" cellspacing='0'>
+             <tr>
+                 <th>星期一</th>
+                 <th>星期二</th>
+                 <th>星期三</th>
+                 <th>星期四</th>
+                 <th>星期五</th>
+             </tr>
+             <tr>
+                 <td>语文</td>
+                 <td>数学</td>
+                 <td>英语</td>
+                 <td>自然</td>
+                 <td rowspan="4">体育</td>
+             </tr>
+            <tr>
+                <td>语文</td>
+                <td>数学</td>
+                <td>英语</td>
+                <td>自然</td>
+              
+            </tr>
+            <tr>
+                <td>语文</td>
+                <td>数学</td>
+                <td>英语</td>
+                <td>自然</td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="2">语文</td>
+                <td>英语</td>
+                <td>自然</td>
+            </tr>
+     </table>
+<!-- 
+    table ul ol [显示数据]
+ -->
+ <!-- 
+     空格 后代选择器
+     > 子元素选择器
+     + 第一个相邻兄弟
+     ～ 所有兄弟
+
+ -->
+ <style>
+     /* .div1 span{ color: #f00;} 后代选择器*/
+     /* .div1>span{ color: #f00;}  子元素选择器*/
+     /* .div1 p+span{ color: #f00;}  相邻兄弟选择器*/
+     /* .div1 p~span{ color: #f00;}  所有兄弟选择器*/
+     .div1>span{ display: none;}
+     .div1 p:hover + span{
+         display: inline;
+     }
+ </style>
+<div class="div1">
+    <p>
+        鼠标悬浮
+        <!-- <span>p-span</span> -->
+    </p>
+    <span>div-span</span>
+    <!-- <span>div-span</span>
+    <span>div-span</span>
+    <span>div-span</span>
+    <span>div-span</span> -->
+</div>
+</body>
+</html>

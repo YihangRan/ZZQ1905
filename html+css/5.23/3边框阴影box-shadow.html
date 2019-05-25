@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 
+        语法：
+        box-shadow: 水平阴影的位置 垂直阴影的位置 模糊 阴影的尺寸 阴影的颜色，内外部阴影[默认值为outset]，内阴影 inset
+        分类：单层阴影，多层引用，内阴影，外阴影
+
+        图片设置阴影：外阴影，不能设置内阴影
+        */
+    .div1{
+        width: 200px;
+        height: 300px;
+        background-color: #f00;
+        box-shadow:5px 5px 8px 2px #000;
+    }
+    .div2{
+        width: 200px;
+        height: 300px;
+        background-color: #f00;
+        box-shadow:5px 5px 5px 3px #000,10px 10px 5px 3px yellow,15px 15px 5px 3px green;
+    }
+    .div3{
+        width: 200px;
+        height: 300px;
+        background-color: #f00;
+        box-shadow:0px 0px 10px 2px #000 inset;
+    }
+    /* .div4{
+        width: 500px;
+        height: 188px;
+        background: #f00;
+        box-shadow:0px 0px 10px 2px #000 inset;
+    } */
+    .img1{
+        width: 500px;
+        padding: 10px;
+        box-shadow: 0px 0px 10px 2px #000 inset;
+    }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4">
+        <img src="images/img1.jpg" class="img1"/>
+    </div>
+    
+</body>
+</html>

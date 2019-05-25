@@ -1,0 +1,221 @@
+/* 样式重置 */
+body,ul,li{
+    padding: 0;
+    margin: 0;
+}
+li{ list-style: none;}
+a{
+    color: #ccc;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+.head{
+    width: 100%;
+    height: 40px;
+    background: #333;
+}
+.head-cent{
+    margin: 0 auto;
+    width: 1226px;
+}
+.head-left{
+    float: left;
+    height: 40px;
+}
+.head-left ul{
+    float: left;
+    margin-top: 9px;
+}
+.head-left ul li{
+    float: left;
+    color: #ccc;
+    border-right: 1px solid #999;
+    padding: 0 10px;
+    line-height: 16px;
+}
+.head-left ul li:hover{
+    float: left;
+    color: #fff;
+}
+.head-left ul li:first-child{
+    padding-left: 0;
+}
+.head-left ul li:last-child{
+    border: 0;
+}
+.head-right{
+    float: right;
+    color: #ccc;
+}
+.head-right ul{
+    float: left;
+    height: 40px;
+}
+.head-right ul li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.head-right ul li:hover{
+    color:#fff;
+}
+.head-right ul li span{
+    margin:0 10px;
+}
+.icon-qicheqianlian-{
+    font-size: 20px;
+}
+.gwc{
+    width: 120px;
+    height: 40px;
+    float: right;
+    background: #424242;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 20px;
+    position: relative;
+    border: 0;
+}
+.gwc:hover{
+    background: #fff;
+    color:#ff6700;
+}
+.gwc-more{
+    width: 240px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    /* border: 1px solid #ccc;  */
+    border-top: 0;
+    background: #fff;
+    display: none;
+}
+/* 鼠标悬浮显示购物车 */
+.gwc:hover .gwc-more{
+    display: inline;
+}
+
+.nav{
+    width: 100%;
+    height: 2000px;
+    color: #fff;
+}
+.nav-cent{
+    width: 1226px;
+    height: 2000px;
+    margin:0 auto;
+}
+/* banner内容 */
+.top{
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+}
+.top-left{
+    float: left;
+    width: 234px;
+    height: 80px;
+}
+.icon-xiaomi{
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    background: #ff6700;
+    font-size: 35px;
+}
+.top-center{
+    float: left;
+}
+.top-center ul{
+    float: left;
+}
+.top-center ul li{ 
+    color: #000;
+    float: left;
+    line-height: 60px;
+    margin:0 10px; 
+}
+.top-right{
+    float: right;
+    position: relative;
+}
+.inp1{
+    float: left;
+    width: 245px;
+    height: 50px;
+}
+.inp1:focus{
+    outline: 0;
+    height: 52px;
+    border: 1px solid #ff6700;
+}
+.inp1:focus+.icon-xiazai17{
+    border: 1px solid #ff6700;
+    border-left: 0;
+}
+.inp1:focus~.top-right-bt{
+    display: none;
+}
+.icon-xiazai17{
+    width: 56px;
+    height: 56px;
+    float: left;
+    font-size: 28px;
+    border-left: 0;
+}
+.icon-xiazai17:hover{
+    color: #fff;
+    background: #ff6700;
+    border: 1px solid #ff6700;
+
+}
+.top-right-bt{
+    position: absolute;
+    top:16px;
+    left: 90px;
+}
+.top-right-bt span{
+    background: #ccc;
+    padding: 3px 5px;
+    margin-left: 10px;
+}
+.top-right-bt span:hover{
+    background: #ff6700;
+}
+.banner{ 
+    width: 1226px;
+    height: 460px;
+    margin:0 auto;
+    position:relative;
+}
+.banner img{ 
+    /* width: 1226px; */
+    width: 100%;
+}
+.banner ul{
+    width: 234px;
+    height: 440px;
+    /* background: #000; */
+    background: rgba(0, 0, 0,0.5);
+    padding-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner ul li{
+    width: 100%;
+    height: 42px;
+    float: left;
+    font-size: 18px;
+    color: #fff;
+    line-height: 42px;
+    /* padding-left: 10px; */
+    text-indent: 20px;
+}
+.banner ul li:hover{
+    background: #ff6700;
+}

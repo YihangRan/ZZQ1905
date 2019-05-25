@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .div1{
+        font-size: 18px;
+        color: #f00;
+    }
+    /* .div1::before{
+        content: 'first-add';
+        text-shadow: 3px 3px 3px #000;
+        font-size: 40px;
+        color: aqua;
+    } */
+    .div1::after{
+        content: '';
+        position: absolute;
+        border-left:10px solid #000;
+        border-right:10px solid #fff;
+        border-top:10px solid #fff;
+        border-bottom:10px solid #fff;
+    }
+    .div1::first-letter{
+        font-size: 42px;
+    }
+    .div1::first-line{
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <!-- before.fater 伪元素选择器
+    iframe  内联框架
+    verify 验证码
+    opacity 图片，文本透明
+    overflow 益处隐藏
+    background-Origin 背景图片位置
+    background-clip 背景剪切 -->
+    <!-- 
+    伪类：  ：hover  ：focus   ：active   
+    伪元素：
+        first-letter ：第一个文本
+        first-line ：第一行
+        before 在元素的前面或元素的后面插入内容【文本】
+        after 
+    -->
+    <div class="div1">Hello这是一段文字，用来测试before这是一段文字，用来测试before这是一段文字，用来测试before这是一段文字，用来测试before这是一段文字，用来测试before这是一段文字，用来测试before这是一段文字，用来测试before这是一段文字，用来测试before这是一段文字，用来测试before这是一段文字，用来测试before这是一段文字，用来测试before这是一段文字，用来测试before这是一段文字，用来测试before</div>
+</body>
+</html>

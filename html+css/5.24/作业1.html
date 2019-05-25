@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/verify.css">
+    <script type="text/javascript" src="js/jquery.min.js" ></script>
+    <script type="text/javascript" src="js/verify.js" ></script>
+    <style>
+    #mpanel2{
+        position: relative;
+    }
+    .verify-code{
+        width: 50px !important;
+        border: 0;
+        background-color: rgba(000, 000, 000, 0) !important;
+        position: absolute;
+        top: 0px;
+        left: 110px;
+    }
+    </style>
+</head>
+<body>
+    <div id="mpanel2"></div>
+    <button type="button" id="check-btn" class="verify-btn">确定</button>
+</body>
+<script>
+$('#mpanel2').codeVerify({ /* #mpanel2 把验证码放在什么位置*/
+    type : 1,  /* 验证码的类型，数字验证码 */
+    width : '300px',/* 验证码的宽度 */
+    height : '30px',/* 验证码的高度 */
+    fontSize : '20px',/* 验证码的文字大小 */
+    codeLength : 4,/* 验证码的长度，一般情况下是4个 */
+    btnId : 'check-btn',/* 点击的提交按钮，必须是id */
+    ready : function() {/* 页面添加成功之后，执行方法 */
+    },
+    success : function() {/* 验证成功之后，执行的方法 */
+        alert('验证匹配！');
+    },
+    error : function() {/* 验证失败之后，执行的方法 */
+        alert('验证码不匹配！');
+    }
+});
+</script>
+</html>

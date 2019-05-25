@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="1024" height="768" id="canvas" style="border:1px solid #aaa; display:block; margin:50px auto;">
+        当前浏览器不支持Canvas，请更换浏览器之后重试
+    </canvas>
+</body>
+<script>
+    window.onload=function(){
+        // 获取convas元素
+        var canvas=document.getElementById('canvas');
+
+        // 定义绘图的大小
+        canvas.width=1024;
+        canvas.height=768;
+
+        if(canvas.getContext('2d')){
+            // 初始化 绘制2d图
+            var context=canvas.getContext('2d')
+        }else{
+            alert('当前浏览器不支持Canvas，请更换浏览器之后重试')
+        }
+        
+    }
+    
+</script>
+</html>
